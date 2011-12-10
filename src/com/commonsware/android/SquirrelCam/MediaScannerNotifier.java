@@ -1,6 +1,6 @@
 /*
     SquirrelCam - a Free Squirrel Webcam app for Android
-    http://launchpad.net/squirrelcam
+    http://code.google.com/p/squirrelcam
 
     Copyright (C) 2010 Jack Deslippe
 
