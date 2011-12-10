@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    SquirrelCam - a Free Squirrel Webcam app for Android
+    http://www.jdeslippe.com/SquirrelCam
+    
+    Copyright (C) 2010 Jack Deslippe
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:paddingTop="10sp"
+            android:paddingLeft="4sp"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            >
+
+            <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/icon"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="320sp" 
+                android:layout_height="240sp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@drawable/squirrel"
+            />
+
+            <TextView  
+                android:textStyle="bold"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text=" " 
+            />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/button"
+                    android:text="@string/refresh_frame"
+                    android:onClick="pressedMainButton"
+                    android:padding="10sp"
+                    android:layout_weight="0.6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                />
+
+                <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/buttonsave"
+                    android:text="@string/save_frame"
+                    android:onClick="pressedSave"
+                    android:layout_weight="0.5"
+                    android:padding="10sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                />
+
+                <Button xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/buttonvideo"
+                    android:text="@string/start_continuous_video"
+                    android:onClick="pressedVideo"
+                    android:layout_weight="0.5"
+                    android:padding="10sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                />
+
+                <TextView
+                    android:id="@+id/tbox"
+                    android:textStyle="bold"
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:text="@string/welcome_to_squirrelcam_short"
+                    android:paddingLeft="4sp"
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
