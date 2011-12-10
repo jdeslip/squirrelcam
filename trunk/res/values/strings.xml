@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_squirrels">The squirrels live on a window ledge off the Birge Hall physics building at the University of California, Berkeley.\n\nEach spring, the squirrels nest on the window ledge and remain there throughout the summer.\n\nDon\'t see any squirrels on camera?  If all you see is a black image, it is probably night time.  If the time-stamp is changing in the upper left corner, the camera and app are working.  The squirrels usually are out between noon-7pm PST; during this period they come and go from their nest often.  On weekdays, we leave nuts out for the squirrels which increases their presence.</string>
+    <string name="camera_offline">Couldn\'t connect to camera, it may be offline. Trying to grab image anyway.</string>
+    <string name="cant_connect">Can\'t connect to Webcam Server</string>
+    <string name="share_body">This picture was taken with SquirrelCam for Android - available in the Android Market</string>
+    <string name="share_header">Check out this picture from SquirrelCam</string>
+    <string name="share_image">Share Image</string>
+    <string name="stop_video">Stop Video</string>
+    <string name="paused">Paused. Restart Video</string>
+    <string name="no_storage">No storage (sdcard or emmc) available.</string>
+    <string name="no_video">Unable to get video.  The webcam-server may be down.</string>
+    <string name="start_video">Start Video</string>
+    <string name="cant_save">Can\'t save image. Is webcam-server connected?</string>
+    <string name="refreshing">Refreshing.  Please wait.</string>
+    <string name="connected">Connected to camera.</string>
+    <string name="no_frame">Unable to get frame.  The camera may be offline.</string>
+    <string name="app_name">SquirrelCam</string>
+    <string name="refresh_frame">Refresh Frame</string>
+    <string name="save_current_frame">Save Current Frame</string>
+    <string name="save_frame">Save Frame</string>
+    <string name="welcome_to_squirrelcam">Welcome to SquirrelCam! Press a button to start.\n</string>
+    <string name="welcome_to_squirrelcam_short">Welcome to SquirrelCam!\n</string>
+    <string name="start_continuous_video">Start Continuous Video</string>
+</resources>

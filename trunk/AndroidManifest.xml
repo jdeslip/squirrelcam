@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    SquirrelCam - a Free Squirrel Webcam app for Android
+    http://www.jdeslippe.com/SquirrelCam
+    
+    Copyright (C) 2010 Jack Deslippe
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.commonsware.android.SquirrelCam"
+      android:icon="@drawable/icon"
+      android:installLocation="auto"
+      android:versionCode="64"
+      android:versionName="2.6.6">
+      <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.touchscreen"
+              android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi"
+              android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.accelerometer"
+              android:required="false"/>
+
+    <supports-screens android:smallScreens="true"
+                  android:normalScreens="true" 
+                  android:largeScreens="true" 
+                  android:anyDensity="true" />
+
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <activity android:name="SquirrelCam"
+		  android:configChanges="keyboardHidden|orientation"
+                  android:launchMode="singleInstance"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest> 
